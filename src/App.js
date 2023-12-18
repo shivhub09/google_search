@@ -1,9 +1,8 @@
 import React from 'react'
+import { Navbar } from './Components/Navbar'
 const App = () => {
   return (
-    <h1 class="text-3xl ">
-    Hello world!
-  </h1>
+    <Navbar/>
   )
 }
 
