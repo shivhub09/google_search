@@ -6,9 +6,15 @@ import { BrowserRouter as Router } from "react-router-dom";
 
 import App from './App';
 
+import { ResultContextProvider } from "./context/ResultContextProvider";
+
 import './global.css';
 
 ReactDOM.render(
-    <Router>
+    <ResultContextProvider>
+         <Router>
         <App/>
-    </Router>, document.getElementById('root'));
+        </Router>
+
+    </ResultContextProvider>
+   , document.getElementById('root'));
