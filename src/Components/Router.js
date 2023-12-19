@@ -8,10 +8,20 @@ export const Router = () => {
   return (
     <div className='p-4'>
       <Routes>
-          <Route exact path='/' Component={Search}></Route>
+          <Route exact path='/' Component={Search}>
+          </Route>
       </Routes>
       <Routes>
-          <Route exact path='/results' Component={Results}></Route>
+          <Route exact path='/search' Component={Search}></Route>
+      </Routes>
+      <Routes>
+          <Route exact path='/images' Component={Results}></Route>
+      </Routes>
+      <Routes>
+          <Route exact path='/videos' Component={Results}></Route>
+      </Routes>
+      <Routes>
+          <Route exact path='/news' Component={Results}></Route>
       </Routes>
     </div>
   );
