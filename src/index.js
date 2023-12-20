@@ -7,8 +7,12 @@ import { BrowserRouter as Router } from "react-router-dom";
 import App from './App';
 
 import './global.css';
+import { ResultContextProvider } from "./context/ResultContextProvider";
 
 ReactDOM.render(
+    <ResultContextProvider>
     <Router>
         <App/>
-    </Router>, document.getElementById('root'));
+    </Router>
+    </ResultContextProvider>
+    , document.getElementById('root'));

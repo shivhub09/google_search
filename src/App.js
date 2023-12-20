@@ -8,7 +8,7 @@ const App = () => {
 
   return (
     <div className={ darkTheme ? 'dark' : ''}>
-          <div className={ darkTheme ? 'bg-gray-900 text-gray-200 min-h-screen' : 'bg-gray-100 ' }>
+          <div className={ 'bg-gray-900 text-gray-200 min-h-screen' }>
             <Navbar />
             <Router/>
             <Footer/>
