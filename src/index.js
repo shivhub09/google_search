@@ -6,8 +6,9 @@ import { BrowserRouter as Router } from "react-router-dom";
 
 import App from './App';
 
-import './global.css';
 import { ResultContextProvider } from "./context/ResultContextProvider";
+
+import './global.css';
 
 ReactDOM.render(
     <ResultContextProvider>
